@@ -1,0 +1,102 @@
+<div [ngClass]="sidebarOpen ? 'sidebar is-open' : 'sidebar' ">
+  <a class="brand-area">
+    <div class="logo">
+      <img src="https://ik.imagekit.io/fuc9k9ckt2b/Brand/tr:q-100/R_Logomark_-_Site_Grey__1__6t3SvJ4JnA.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1653797284952" alt="">
+    </div>
+
+    <ng-container *ngIf="sidebarOpen">
+      <div class="view-name">
+        <span class="title">
+          {{ viewTitle }}
+        </span>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="sidebarOpen">
+      <a class="collapse-btn" (click)="sidebarOpen = !sidebarOpen">
+        <i class="material-icons">menu_open</i>
+      </a>
+    </ng-container>
+  </a>
+
+  <ng-container *ngIf="!sidebarOpen">
+    <a class="open-btn" (click)="sidebarOpen = !sidebarOpen">
+      <i class="material-icons">
+        menu
+      </i>
+    </a>
+  </ng-container>
+
+  <div class="menu-items">
+    <a class="menu-item">
+      <div class="bar-icon">
+        <i class="material-icons">move_down</i>
+      </div>
+      <ng-container *ngIf="sidebarOpen">
+        <div class="item-name">
+          Main File
+        </div>
+      </ng-container>
+    </a>
+
+    <a class="menu-item">
+      <div class="bar-icon">
+        <i class="material-icons">support</i>
+      </div>
+
+      <ng-container *ngIf="sidebarOpen">
+        <div class="item-name">
+          Utilities
+        </div>
+      </ng-container>
+    </a>
+
+
+    <a class="menu-item active">
+      <div class="bar-icon">
+        <i class="material-icons">
+          format_color_fill
+        </i>
+      </div>
+
+
+      <ng-container *ngIf="sidebarOpen">
+        <div class="item-name">
+          Colors
+        </div>
+      </ng-container>
+    </a>
+
+
+    <a class="menu-item">
+      <div class="bar-icon">
+        <i class="material-icons">
+          branding_watermark
+        </i>
+      </div>
+
+      <ng-container *ngIf="sidebarOpen">
+        <div class="item-name">
+          Forms
+        </div>
+      </ng-container>
+    </a>
+
+    <a class="menu-item">
+      <div class="bar-icon">
+        <i class="material-icons">
+          gamepad
+        </i>
+      </div>
+
+      <ng-container *ngIf="sidebarOpen">
+        <div class="item-name">
+          Buttons
+        </div>
+      </ng-container>
+    </a>
+  </div>
+
+  <div class="extra">
+  </div>
+</div>

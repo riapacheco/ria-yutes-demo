@@ -1,0 +1,11 @@
+
+:host {
+  display: flex;
+}
+
+.scroll-window {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll !important;
+  background-color: transparent;
+}
