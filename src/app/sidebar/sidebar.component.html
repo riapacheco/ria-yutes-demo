@@ -1,11 +1,11 @@
 <div [ngClass]="sidebarOpen ? 'sidebar is-open' : 'sidebar' ">
   <a class="brand-area">
-    <a routerLink="" class="logo">
+    <a routerLink="home" class="logo">
       <img src="https://ik.imagekit.io/fuc9k9ckt2b/Brand/tr:q-100/R_Logomark_-_Site_Grey__1__6t3SvJ4JnA.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1653797284952" alt="">
     </a>
 
     <ng-container *ngIf="sidebarOpen">
-      <a routerLink="" class="view-name">
+      <a routerLink="home" class="view-name">
         <span class="title">
           {{ viewTitle }}
         </span>
