@@ -1,15 +1,15 @@
 <div [ngClass]="sidebarOpen ? 'sidebar is-open' : 'sidebar' ">
   <a class="brand-area">
-    <div class="logo">
+    <a routerLink="" class="logo">
       <img src="https://ik.imagekit.io/fuc9k9ckt2b/Brand/tr:q-100/R_Logomark_-_Site_Grey__1__6t3SvJ4JnA.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1653797284952" alt="">
-    </div>
+    </a>
 
     <ng-container *ngIf="sidebarOpen">
-      <div class="view-name">
+      <a routerLink="" class="view-name">
         <span class="title">
           {{ viewTitle }}
         </span>
-      </div>
+      </a>
     </ng-container>
 
     <ng-container *ngIf="sidebarOpen">
@@ -28,7 +28,27 @@
   </ng-container>
 
   <div class="menu-items">
-    <a class="menu-item">
+
+
+    <a
+      routerLink="home" 
+      routerLinkActive="active"
+      class="menu-item">
+      <div class="bar-icon">
+        <i class="material-icons">home</i>
+      </div>
+
+      <ng-container *ngIf="sidebarOpen">
+        <div class="item-name">
+          Home
+        </div>
+      </ng-container>
+    </a>
+
+    <a
+      routerLink="yutes"
+      routerLinkActive="active"
+      class="menu-item">
       <div class="bar-icon">
         <i class="material-icons">move_down</i>
       </div>
@@ -52,7 +72,7 @@
     </a>
 
 
-    <a class="menu-item active">
+    <a class="menu-item">
       <div class="bar-icon">
         <i class="material-icons">
           format_color_fill
