@@ -7,6 +7,8 @@ import { HelloComponent } from './hello.component';
 import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './views/home/home.component';
+import { YutesFileComponent } from './views/yutes-file/yutes-file.component';
 
 @NgModule({
   imports: [
@@ -19,7 +21,9 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent, 
     HelloComponent, 
-    SidebarComponent
+    SidebarComponent,
+    HomeComponent,
+    YutesFileComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
