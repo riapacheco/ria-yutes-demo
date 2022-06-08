@@ -1,13 +1,9 @@
-/*
-    Colors, alternative colors, utilities
-*/
-
 /* -------------------------------------------------------------------------- */
-/*                                   COLORS                                   */
+/*                                   Colors                                   */
 /* -------------------------------------------------------------------------- */
-/* Color variables and class versions */
 
-/* ----------------------- Primary, Secondary, Accent ----------------------- */
+
+/* ------------------------ Primary, Secondary Accent ----------------------- */
 $primary-color: #ff5630;
 $primary-light-color: #ff8f73;
 $primary-medium-color: #ff7452;
@@ -47,77 +43,41 @@ $info-dark: #000000;
 // Primary, Secondary, Accent Classes
 .primary-color {
   color: $primary-color;
-  &.light {
-    color: $primary-light-color;
-  }
-  &.medium {
-    color: $primary-medium-color;
-  }
-  &.dark {
-    color: $primary-dark-color;
-  }
+  &.light { color: $primary-light-color }
+  &.medium { color: $primary-medium-color }
+  &.dark { color: $primary-dark-color }
 }
 .primary-bg {
   background-color: $primary-color;
-  &.light {
-    background-color: $primary-light-color;
-  }
-  &.medium {
-    background-color: $primary-medium-color;
-  }
-  &.dark {
-    background-color: $primary-dark-color;
-  }
+  &.light { background-color: $primary-light-color };
+  &.medium { background-color: $primary-medium-color }
+  &.dark { background-color: $primary-dark-color }
 }
 
 .secondary-color {
   color: $secondary-color;
-  &.light {
-    color: $secondary-light-color;
-  }
-  &.medium {
-    color: $secondary-medium-color;
-  }
-  &.dark {
-    color: $secondary-dark-color;
-  }
+  &.light { color: $secondary-light-color }
+  &.medium { color: $secondary-medium-color }
+  &.dark { color: $secondary-dark-color }
 }
 .secondary-bg {
   background-color: $secondary-color;
-  &.light {
-    background-color: $secondary-light-color;
-  }
-  &.medium {
-    background-color: $secondary-medium-color;
-  }
-  &.dark {
-    background-color: $secondary-dark-color;
-  }
+  &.light { background-color: $secondary-light-color }
+  &.medium { background-color: $secondary-medium-color }
+  &.dark { background-color: $secondary-dark-color }
 }
 
 .accent-color {
   color: $accent-color;
-  &.light {
-    color: $accent-light-color;
-  }
-  &.medium {
-    color: $accent-medium-color;
-  }
-  &.dark {
-    color: $accent-dark-color;
-  }
+  &.light { color: $accent-light-color }
+  &.medium { color: $accent-medium-color }
+  &.dark { color: $accent-dark-color }
 }
 .accent-bg {
   background-color: $accent-color;
-  &.light {
-    background-color: $accent-light-color;
-  }
-  &.medium {
-    background-color: $accent-medium-color;
-  }
-  &.dark {
-    background-color: $accent-dark-color;
-  }
+  &.light { background-color: $accent-light-color }
+  &.medium { background-color: $accent-medium-color }
+  &.dark { background-color: $accent-dark-color }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -143,78 +103,86 @@ $alt-text: #b8b8b8;
 /* ----------------------------- Class Versions ----------------------------- */
 .alt-primary-color {
   color: $alt-primary-color;
-  &.light {
-    color: $alt-primary-light-color;
-  }
-  &.medium {
-    color: $alt-primary-medium-color;
-  }
-  &.dark {
-    color: $alt-primary-dark-color;
-  }
+  &.light { color: $alt-primary-light-color; }
+  &.medium { color: $alt-primary-medium-color; }
+  &.dark { color: $alt-primary-dark-color; }
 }
 .alt-primary-bg {
   background-color: $alt-primary-color;
-  &.light {
-    background-color: $alt-primary-light-color;
-  }
-  &.medium {
-    background-color: $alt-primary-medium-color;
-  }
-  &.dark {
-    background-color: $alt-primary-dark-color;
-  }
+  &.light { background-color: $alt-primary-light-color; }
+  &.medium { background-color: $alt-primary-medium-color; }
+  &.dark { background-color: $alt-primary-dark-color; }
 }
 
 .alt-secondary-color {
   color: $alt-secondary-color;
-  &.light {
-    color: $alt-secondary-light-color;
-  }
-  &.medium {
-    color: $alt-secondary-medium-color;
-  }
-  &.dark {
-    color: $alt-secondary-dark-color;
-  }
+  &.light { color: $alt-secondary-light-color; }
+  &.medium { color: $alt-secondary-medium-color; }
+  &.dark { color: $alt-secondary-dark-color; }
 }
 .alt-secondary-bg {
   background-color: $alt-secondary-color;
-  &.light {
-    background-color: $alt-secondary-light-color;
-  }
-  &.medium {
-    background-color: $alt-secondary-medium-color;
-  }
-  &.dark {
-    background-color: $alt-secondary-dark-color;
-  }
+  &.light { background-color: $alt-secondary-light-color; }
+  &.medium { background-color: $alt-secondary-medium-color; }
+  &.dark { background-color: $alt-secondary-dark-color; }
 }
 
-.alt-accent {
-  color: $alt-accent-color;
-  &.light {
-    color: $alt-accent-light-color;
-  }
-  &.medium {
-    color: $alt-accent-medium-color;
-  }
-  &.dark {
-    color: $alt-accent-dark-color;
-  }
+.alt-accent { 
+  color: $alt-accent-color; 
+  &.light { color: $alt-accent-light-color; }
+  &.medium { color: $alt-accent-medium-color; }
+  &.dark { color: $alt-accent-dark-color; }
 }
 .alt-accent-bg {
-  background-color: $alt-accent-color;
-  &.light {
-    background-color: $alt-accent-light-color;
-  }
-  &.medium {
-    background-color: $alt-accent-medium-color;
-  }
-  &.dark {
-    background-color: $alt-accent-dark-color;
-  }
+  background-color: $alt-accent-color; 
+  &.light { background-color: $alt-accent-light-color; }
+  &.medium { background-color: $alt-accent-medium-color; }
+  &.dark { background-color: $alt-accent-dark-color; }
 }
 
 // Other
 $form-input-field-bg: $accent-light-color;
+
+
+/*
+              THESE COLORS ARE JUST ONES I PULLED IN
+              BECAUSE IT FELT RIGHT FOR THE DESIGN. 
+              BUT I WANTED TO KEEP THE ABOVE TO STILL
+              ENABLE YOUR TRAVERSING THE FILES EFFECTIVELY.
+*/
+
+/* Color variables and class versions */
+$violet-pale: #E1C7E0;
+$violet-lightest: #D6A9D5;
+$violet-light: #C270C0;
+$violet-medium: #C054BE;
+$violet-dark: #A239A0;
+$salmon-pale: #FFBDAD;
+$salmon-lightest: #FF8F73;
+$salmon-light: #FF7452;
+$salmon-medium: #FF5630;
+$salmon-dark: #DE350B;
+$canary-yellow-pale: #FFF0B3;
+$canary-yellow-lightest: #FFC380;
+$canary-yellow-light: #FFC400;
+$canary-yellow-medium: #FFAB00;
+$canary-yellow-dark: #FF991F;
+$bondi-blue-pale: #B3F5FF;
+$bondi-blue-lightest: #79E2F2;
+$bondi-blue-light: #00C7E6;
+$bondi-blue-medium: #00B8D9;
+$bondi-blue-dark: #00A3BF;
+$success: #2ECC71;
+$warning: #FFCD28;
+$danger: #FF554C;
+$steel-grey-light: #E5E7EA;
+$steel-grey-medium: #CED2D6;
+$steel-grey-dark: #9EA5AD;
+$soot-grey-light: #777988;
+$soot-grey-medium: #5B5D6A;
+$soot-grey-dark: #484A55;
+$pale-midnight-light: #3D4148;
+$pale-midnight-medium: #33363B;
+$pale-midnight-dark: #2E3138;
+$pale-midnight: #26282C;
+$midnight: #1D1F22;
