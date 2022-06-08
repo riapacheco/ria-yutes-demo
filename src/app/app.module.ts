@@ -57,7 +57,7 @@ import { HttpClientModule } from '@angular/common/http';
         languages: {
           typescript: () => import('highlight.js/lib/languages/typescript'),
           css: () => import('highlight.js/lib/languages/css'),
-          html: () => import('highlight.js/lib/languages/html'),
+          xml: () => import('highlight.js/lib/languages/xml'),
         },
       },
     },
