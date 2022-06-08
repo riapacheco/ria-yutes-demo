@@ -30,10 +30,15 @@ export class SidebarComponent implements OnInit {
     }
   }
   onHover(e: any, text: string): void {
-    this.tooltipService.showTooltip(text, e.clientY, e.clientX);
+    if (!this.sidebarOpen) {
+      this.tooltipService.showTooltip(text, e.clientY, e.clientX);
+    }
   }
   onMouseOut(): void {
     this.tooltipService.hideTooltip();
   }
 
+  consoleIt() {
+    console.log('ye');
+  }
 }
