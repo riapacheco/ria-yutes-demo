@@ -7,6 +7,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, OnDestroy {
+  language = 'typescript';
 
   private sub = new Subscription();
   constructor() { }
