@@ -14,6 +14,7 @@ import { ButtonsComponent } from './views/buttons/buttons.component';
 import { StatesService } from './services/states.service';
 import { TooltipService } from './services/tooltip.service';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
+
 import { AccordionComponent } from './components/accordion/accordion.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { AccordionComponent } from './components/accordion/accordion.component';
     CommonModule, 
     FormsModule,
     AppRoutingModule,
+
   ],
   declarations: [
     AppComponent, 
