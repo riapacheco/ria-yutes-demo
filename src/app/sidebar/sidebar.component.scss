@@ -4,7 +4,7 @@
 $bar-width: 72px;
 $full-width: 270px;
 $active-color: $salmon-light;
-$hover-scale: scale(1.25);
+$hover-scale: scale(1.4);
 
 .sidebar {
   padding-top: 0.5rem;
@@ -89,6 +89,7 @@ $hover-scale: scale(1.25);
       right: 1.5rem;
       i {
         font-size: 1.3rem;
+        -webkit-font-smoothing: antialiased !important;
         
       }
       &:hover {
