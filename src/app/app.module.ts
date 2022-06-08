@@ -13,6 +13,8 @@ import { UtilitiesComponent } from './views/utilities/utilities.component';
 import { ColorsComponent } from './views/colors/colors.component';
 import { ButtonsComponent } from './views/buttons/buttons.component';
 import { StatesService } from './services/states.service';
+import { TooltipService } from './services/tooltip.service';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 
 @NgModule({
   imports: [
@@ -30,11 +32,13 @@ import { StatesService } from './services/states.service';
     YutesFileComponent,
     UtilitiesComponent,
     ColorsComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    TooltipComponent
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
-    StatesService
+    StatesService,
+    TooltipService
   ],
   bootstrap: [AppComponent],
 })

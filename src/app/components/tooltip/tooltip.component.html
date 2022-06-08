@@ -1,0 +1,8 @@
+<div
+  *ngIf="tooltip?.$showsTooltip | async"
+  [style.top]="(tooltip?.$tooltipTopY | async) + 'px'"
+  [style.left]="(tooltip?.$tooltipLeftX | async) + 'px'"
+  class="tooltip"
+>
+  {{ tooltip?.$tooltipText | async }}
+</div>

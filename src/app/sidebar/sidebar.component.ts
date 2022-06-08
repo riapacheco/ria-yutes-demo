@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StatesService } from '../services/states.service';
+import { TooltipService } from '../services/tooltip.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -10,7 +11,10 @@ export class SidebarComponent implements OnInit {
   sidebarOpen!: boolean;
   viewTitle = 'Yutes';
 
-  constructor( public stateService: StatesService ) { }
+  constructor(
+    public stateService: StatesService,
+    public tooltipService: TooltipService
+    ) { }
 
   ngOnInit() {
     this.stateService.sidebarState$.subscribe(res => {
@@ -24,6 +28,12 @@ export class SidebarComponent implements OnInit {
     } else if (this.sidebarOpen == true) {
       this.stateService.updateSidebarState(false);
     }
+  }
+  onHover(e: any, text: string): void {
+    this.tooltipService.showTooltip(text, e.clientY, e.clientX);
+  }
+  onMouseOut(): void {
+    this.tooltipService.hideTooltip();
   }
 
 }
