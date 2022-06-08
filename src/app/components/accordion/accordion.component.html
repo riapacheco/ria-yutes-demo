@@ -1,0 +1,23 @@
+<div class="accordion-group">
+  <div class="accordion-item" *ngFor="let block of blocks">
+    <a class="heading" (click)="this.block.showsBody = !this.block.showsBody">
+      <div class="heading-content">
+        <div class="title">
+          {{ block.header }}
+        </div>
+
+        <i class="material-icons">
+          {{ this.block.showsBody ? 'expand_less' : 'expand_more' }}
+        </i>
+      </div>
+    </a>
+
+    <ng-container *ngIf="this.block.showsBody">
+      <div class="panel">
+        <div class="body-content">
+          <ng-content select="[accordionBodyContent]"></ng-content>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import { PrismModule } from '@ngx-prism/core';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
@@ -15,6 +15,7 @@ import { ButtonsComponent } from './views/buttons/buttons.component';
 import { StatesService } from './services/states.service';
 import { TooltipService } from './services/tooltip.service';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
     FormsModule, 
     CommonModule, 
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PrismModule
   ],
   declarations: [
     AppComponent, 
@@ -33,7 +35,8 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
     UtilitiesComponent,
     ColorsComponent,
     ButtonsComponent,
-    TooltipComponent
+    TooltipComponent,
+    AccordionComponent
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },

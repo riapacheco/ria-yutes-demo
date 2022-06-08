@@ -12,7 +12,7 @@
 /* -------------------------------------------------------------------------- */
 
 html, body {
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Inter', sans-serif;
   cursor: default;
   -webkit-font-smoothing: antialiased !important;
@@ -189,6 +189,7 @@ h2 { @extend %h2-styles; }
 .pad-one {
   padding: 1rem;
 }
+
 /* -------------------------------------------------------------------------- */
 /*                                  Z-INDEX                                   */
 /* -------------------------------------------------------------------------- */
