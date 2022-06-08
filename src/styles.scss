@@ -12,10 +12,7 @@
 /* -------------------------------------------------------------------------- */
 
 html, body {
-  // Main font (REM is multiple of font size)
   font-size: 16px;
-  // letter-spacing: -0.03rem;
-  // font-weight: 500;
   font-family: 'Inter', sans-serif;
   cursor: default;
   -webkit-font-smoothing: antialiased !important;
@@ -27,7 +24,7 @@ html, body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 
-  // Antialiasing Forever
+  // Antialiasing ----- I'M OBSESSED.
   -moz-osx-font-smoothing: grayscale;
   -moz-font-smoothing: antialiased !important;
   -webkit-font-smoothing: antialiased !important;
