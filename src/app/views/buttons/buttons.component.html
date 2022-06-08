@@ -6,7 +6,17 @@
     So hot right now.
   </p>
 
-  <div class="reference-block">
-    
+
+  <div class="ref-block">
+    <app-accordion
+      [blocks]="blocks">
+      <div accordionBodyContent>
+
+        <pre>
+          <code [highlight]="btnUsage">
+          </code>
+        </pre>
+      </div>
+    </app-accordion>
   </div>
 </div>
