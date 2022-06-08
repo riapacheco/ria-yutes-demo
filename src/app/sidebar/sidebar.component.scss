@@ -113,12 +113,13 @@ $hover-scale: scale(1.25);
       flex-flow: row nowrap;
       align-items: center;
       justify-content: flex-start;
+      -webkit-font-smoothing: antialiased !important;
       
       // border-radius: 0px 6px 6px 0px;
       width: 100%;
 
       &:hover {
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         .bar-icon {
           i {
             transform: $hover-scale;
@@ -141,7 +142,7 @@ $hover-scale: scale(1.25);
         }
 
         &:hover {
-          background-color: #FF8F73;
+          background-color: $midnight;
         }
       }
 
