@@ -16,7 +16,7 @@ export class ButtonsComponent implements OnInit {
 
   // Code
   btnUsage = `
-    
+    <button class="btn primary">Submit</button>
   `;
   constructor() { }
 
