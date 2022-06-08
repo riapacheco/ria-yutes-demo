@@ -7,4 +7,5 @@ export class StatesService {
   constructor() { }
 
   updateSidebarState(newState: boolean) { this.sidebarState$.next(newState); }
+  closeSidebar() { this.sidebarState$.next(false); }
 }

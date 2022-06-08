@@ -3,7 +3,7 @@
 :host { -webkit-font-smoothing: antialiased !important; }
 $bar-width: 72px;
 $full-width: 270px;
-$active-color: $salmon-light;
+$active-color: $salmon-medium;
 $hover-scale: scale(1.4);
 
 .sidebar {
@@ -30,7 +30,7 @@ $hover-scale: scale(1.4);
   // If menu is open
   &.is-open {
     width: $full-width;
-    box-shadow: 12px 4px 22px #00000015;
+    box-shadow: 25px 4px 30px #00000015;
   }
 
   // If hovering over menu
@@ -70,7 +70,7 @@ $hover-scale: scale(1.4);
       justify-content: center;
       
       img {
-        width: 40px;
+        width: 45px;
       }
     }
 
