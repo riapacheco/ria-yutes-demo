@@ -1,5 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
 import { StatesService } from '../services/states.service';
 
 @Component({
@@ -14,9 +13,17 @@ export class SidebarComponent implements OnInit {
   constructor( public stateService: StatesService ) { }
 
   ngOnInit() {
-  }
-  updateSidebar(){
+    this.stateService.sidebarState$.subscribe(res => {
+      this.sidebarOpen = res;
+    })
     
+  }
+  onMenuClick(){
+    if (this.sidebarOpen == false ){
+      this.stateService.updateSidebarState(true);
+    } else if (this.sidebarOpen == true) {
+      this.stateService.updateSidebarState(false);
+    }
   }
 
 }

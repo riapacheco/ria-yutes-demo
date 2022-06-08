@@ -1,4 +1,4 @@
-<div [ngClass]="sidebarOpen ? 'sidebar is-open' : 'sidebar' ">
+<div [ngClass]="(stateService.sidebarState$ | async) ? 'sidebar is-open' : 'sidebar' ">
   <a class="brand-area">
     <a routerLink="home" class="logo">
       <img src="https://ik.imagekit.io/fuc9k9ckt2b/Brand/tr:q-100/R_Logomark_-_Site_Grey__1__6t3SvJ4JnA.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1653797284952" alt="">
@@ -13,14 +13,18 @@
     </ng-container>
 
     <ng-container *ngIf="(stateService.sidebarState$ | async)">
-      <a class="collapse-btn">
+      <a
+        (click)="onMenuClick()"
+        class="collapse-btn">
         <i class="material-icons">menu_open</i>
       </a>
     </ng-container>
   </a>
 
   <ng-container *ngIf="!(stateService.sidebarState$ | async)">
-    <a class="open-btn" >
+    <a
+      (click)="onMenuClick()"
+      class="open-btn" >
       <i class="material-icons">
         menu
       </i>
