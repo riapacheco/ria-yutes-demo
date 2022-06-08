@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { PrismModule } from '@ngx-prism/core';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
@@ -24,7 +23,6 @@ import { AccordionComponent } from './components/accordion/accordion.component';
     CommonModule, 
     FormsModule,
     AppRoutingModule,
-    PrismModule
   ],
   declarations: [
     AppComponent, 
