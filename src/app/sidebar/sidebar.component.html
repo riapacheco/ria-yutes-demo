@@ -4,7 +4,7 @@
       <img src="https://ik.imagekit.io/fuc9k9ckt2b/Brand/tr:q-100/R_Logomark_-_Site_Grey__1__6t3SvJ4JnA.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1653797284952" alt="">
     </a>
 
-    <ng-container *ngIf="sidebarOpen">
+    <ng-container *ngIf="(stateService.sidebarState$ | async)">
       <a routerLink="home" class="view-name">
         <span class="title">
           {{ viewTitle }}
@@ -12,15 +12,15 @@
       </a>
     </ng-container>
 
-    <ng-container *ngIf="sidebarOpen">
-      <a class="collapse-btn" (click)="sidebarOpen = !sidebarOpen">
+    <ng-container *ngIf="(stateService.sidebarState$ | async)">
+      <a class="collapse-btn">
         <i class="material-icons">menu_open</i>
       </a>
     </ng-container>
   </a>
 
-  <ng-container *ngIf="!sidebarOpen">
-    <a class="open-btn" (click)="sidebarOpen = !sidebarOpen">
+  <ng-container *ngIf="!(stateService.sidebarState$ | async)">
+    <a class="open-btn" >
       <i class="material-icons">
         menu
       </i>
@@ -38,7 +38,7 @@
         <i class="material-icons">home</i>
       </div>
 
-      <ng-container *ngIf="sidebarOpen">
+      <ng-container *ngIf="(stateService.sidebarState$ | async)">
         <div class="item-name">
           Home
         </div>
@@ -52,7 +52,7 @@
       <div class="bar-icon">
         <i class="material-icons">move_down</i>
       </div>
-      <ng-container *ngIf="sidebarOpen">
+      <ng-container *ngIf="(stateService.sidebarState$ | async)">
         <div class="item-name">
           Main File
         </div>
@@ -67,7 +67,7 @@
         <i class="material-icons">support</i>
       </div>
 
-      <ng-container *ngIf="sidebarOpen">
+      <ng-container *ngIf="(stateService.sidebarState$ | async)">
         <div class="item-name">
           Utilities
         </div>
@@ -86,7 +86,7 @@
       </div>
 
 
-      <ng-container *ngIf="sidebarOpen">
+      <ng-container *ngIf="(stateService.sidebarState$ | async)">
         <div class="item-name">
           Colors
         </div>
@@ -104,7 +104,7 @@
         </i>
       </div>
 
-      <ng-container *ngIf="sidebarOpen">
+      <ng-container *ngIf="(stateService.sidebarState$ | async)">
         <div class="item-name">
           Forms
         </div>
@@ -121,7 +121,7 @@
         </i>
       </div>
 
-      <ng-container *ngIf="sidebarOpen">
+      <ng-container *ngIf="(stateService.sidebarState$ | async)">
         <div class="item-name">
           Buttons
         </div>

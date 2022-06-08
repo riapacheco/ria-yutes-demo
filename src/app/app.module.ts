@@ -12,6 +12,7 @@ import { YutesFileComponent } from './views/yutes-file/yutes-file.component';
 import { UtilitiesComponent } from './views/utilities/utilities.component';
 import { ColorsComponent } from './views/colors/colors.component';
 import { ButtonsComponent } from './views/buttons/buttons.component';
+import { StatesService } from './services/states.service';
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import { ButtonsComponent } from './views/buttons/buttons.component';
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
+    StatesService
   ],
   bootstrap: [AppComponent],
 })
