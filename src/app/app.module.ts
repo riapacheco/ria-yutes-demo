@@ -9,6 +9,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './views/home/home.component';
 import { YutesFileComponent } from './views/yutes-file/yutes-file.component';
+import { UtilitiesComponent } from './views/utilities/utilities.component';
+import { ColorsComponent } from './views/colors/colors.component';
+import { ButtonsComponent } from './views/buttons/buttons.component';
 
 @NgModule({
   imports: [
@@ -23,7 +26,10 @@ import { YutesFileComponent } from './views/yutes-file/yutes-file.component';
     HelloComponent, 
     SidebarComponent,
     HomeComponent,
-    YutesFileComponent
+    YutesFileComponent,
+    UtilitiesComponent,
+    ColorsComponent,
+    ButtonsComponent
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
