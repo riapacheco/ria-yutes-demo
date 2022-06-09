@@ -2,17 +2,55 @@
   <h2>
     Buttons
   </h2>
-  <p>
-    So hot right now.
-  </p>
 
 
   <div class="ref-block">
     <app-accordion
-      [blocks]="blocks">
+      [accordionBlock]="basicUsageBlock">
       <div accordionBodyContent>
+        <h3>
+          Input
+        </h3>
+        <div [innerHTML]="basicUsageBlock.body"></div>
+        <div class="code-wrapper" >
+          <pre><code [highlight]="basicUsageBlock.code"></code></pre>
+        </div>
 
-        <pre><code [highlight]="btnUsage"></code></pre>
+        <div class="accordion-divider mt-2 mb-1"></div>
+
+        <h3>Result</h3>
+        <div class="flex-row nowrap align-start justify-start mb-1">
+
+          <div class="ml-1 mr-3 flex-column nowrap align-start justify-start">
+            <div class="mb-1">
+              <code>.primary</code> class
+            </div>
+            <button class="btn primary ml-2 mr-1">
+              Submit
+            </button>
+          </div>
+          <div class="ml-1 mr-3 flex-column nowrap align-start justify-start">
+            <div class="mb-1">
+              <code>.secondary</code> class
+            </div>
+            <button class="btn secondary ml-2 mr-1">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </app-accordion>
+    <ng-container *ngIf="basicUsageBlock.showsBody || roundedUsage.showsBody">
+      <div class="accordion-spacing"></div>
+    </ng-container>
+    <app-accordion
+      [accordionBlock]="roundedUsage">
+      <div accordionBlockContent>
+        <h3>Input</h3>
+        <div [innerHTML]="roundedUsage.body"></div>
+        <div class="code-wrapper">
+          <pre><code [highlight]="roundedUsage.code"></code></pre>
+        </div>
       </div>
     </app-accordion>
   </div>

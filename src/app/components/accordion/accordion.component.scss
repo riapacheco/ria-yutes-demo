@@ -5,7 +5,7 @@
   -webkit-font-smoothing: antialiased !important;
 }
 $padding-TB: 0.8rem;
-$heading-size: 1.15rem;
+$heading-size: 1.3rem;
 
 .temp-wrapper {
   width: 70%;
@@ -22,7 +22,6 @@ $heading-size: 1.15rem;
     border-radius: 8px;
     padding: $padding-TB 1rem;
 
-
     .heading {
       .heading-content {
         display: flex;
@@ -32,7 +31,7 @@ $heading-size: 1.15rem;
 
         .title {
           -webkit-font-smoothing: antialiased !important;
-          font-weight: 600;
+          font-weight: 700;
           font-size: $heading-size;
 
           &:hover {
@@ -66,6 +65,19 @@ $heading-size: 1.15rem;
       display: inline-flex;
       flex-flow: column nowrap;
       
+    }
+
+    &:hover {
+      .heading {
+        .heading-content {
+          .title {
+            color: $salmon-medium;
+          }
+          i {
+            background-color: $salmon-dark;
+          }
+        }
+      }
     }
   }
 

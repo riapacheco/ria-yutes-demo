@@ -1,5 +1,17 @@
-:host { -webkit-font-smoothing: antialiased !important; }
-
+@import '../../../_mixins.scss';
+:host {
+  -webkit-font-smoothing: antialiased !important;
+  
+}
 .ref-block {
-  max-width: 550px;
+  max-width: 85%;
+}
+
+.accordion-divider {
+  @include accordion-divider;
+}
+
+.accordion-spacing {
+  display: block;
+  height: 1rem;
 }

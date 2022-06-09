@@ -9,7 +9,7 @@ import { TooltipService } from '../services/tooltip.service';
 })
 export class SidebarComponent implements OnInit {
   sidebarOpen!: boolean;
-  viewTitle = 'Yutes';
+  viewTitle = 'Yutes v3';
 
   constructor(
     public stateService: StatesService,

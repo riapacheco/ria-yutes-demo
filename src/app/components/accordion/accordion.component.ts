@@ -7,12 +7,10 @@ import { IAccordion } from './accordion.interface';
   styleUrls: ['./accordion.component.scss']
 })
 export class AccordionComponent implements OnInit {
-  @Input() blocks: IAccordion[] = [
-    {
-      header: 'Default Title',
-      showsBody: false,
-    }
-  ];
+  @Input() accordionBlock: IAccordion = {
+    header: 'Default Header',
+    showsBody: true
+  };
 
   constructor() { }
 

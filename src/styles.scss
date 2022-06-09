@@ -190,6 +190,14 @@ h2 { @extend %h2-styles; }
   padding: 1rem;
 }
 
+code.hljs {
+  background: transparent;
+  
+}
+pre code.hljs {
+  border-radius: 6px !important;
+  background-color: #F5F5F5;
+}
 /* -------------------------------------------------------------------------- */
 /*                                  Z-INDEX                                   */
 /* -------------------------------------------------------------------------- */
