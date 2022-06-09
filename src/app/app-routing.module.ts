@@ -10,7 +10,7 @@ import { YutesFileComponent } from './views/yutes-file/yutes-file.component';
 const routes: Routes = [
   {
     path: '',
-    component: ButtonsComponent
+    component: ButtonsComponent,
   },
   {
     path: 'home',
