@@ -9,7 +9,7 @@ import { IAccordion } from '../../components/accordion/accordion.interface';
 export class ButtonsComponent implements OnInit {
   basicUsageBlock: IAccordion = {
     header: 'Basic Usage',
-    showsBody: false,
+    showsBody: true,
     body: `
       Add the <code>.btn</code> class followed by the <code>.primary</code> or <code>.secondary</code> class.
     `,
@@ -17,13 +17,22 @@ export class ButtonsComponent implements OnInit {
   };
   roundedUsage: IAccordion = {
     header: 'Rounded',
-    showsBody: true,
+    showsBody: false,
     body: `
       Add the <code>.rounded</code> class to get...rounded corners.
     `,
     code: `<button class="btn primary rounded">Save Changes</button>`
   };
-  
+  hoverUsage: IAccordion = {
+    header: 'On Hover',
+    showsBody: false,
+    body:'more stuff!'
+  };
+  overrideInstructions: IAccordion = {
+    header: 'Override Instructions',
+    showsBody: false,
+    body: 'Something'
+  };
   constructor() { }
 
   ngOnInit() {
