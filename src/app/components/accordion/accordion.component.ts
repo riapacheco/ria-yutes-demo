@@ -9,7 +9,7 @@ import { IAccordion } from './accordion.interface';
 export class AccordionComponent implements OnInit {
   @Input() accordionBlock: IAccordion = {
     header: 'Default Header',
-    showsBody: true
+    showsBody: false
   };
 
   constructor() { }
