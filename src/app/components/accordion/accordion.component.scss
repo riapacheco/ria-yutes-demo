@@ -6,6 +6,7 @@
 }
 $padding-TB: 0.8rem;
 $heading-size: 1.3rem;
+$min-width: 250px;
 
 .temp-wrapper {
   width: 70%;
@@ -14,7 +15,7 @@ $heading-size: 1.3rem;
 }
 
 .accordion-group {
-
+  min-width: $min-width;
   .accordion-item {
     margin-bottom: 0.5rem;
     width: inherit;

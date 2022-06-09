@@ -9,7 +9,7 @@ import { IAccordion } from '../../components/accordion/accordion.interface';
 export class ButtonsComponent implements OnInit {
   basicUsageBlock: IAccordion = {
     header: 'Basic Usage',
-    showsBody: true,
+    showsBody: false,
     body: `
       Add the <code>.btn</code> class followed by the <code>.primary</code> or <code>.secondary</code> class.
     `,

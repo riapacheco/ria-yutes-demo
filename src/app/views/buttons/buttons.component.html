@@ -5,6 +5,8 @@
 
 
   <div class="ref-block">
+
+    <!--Basic Usage Accordion-->
     <app-accordion
       [accordionBlock]="basicUsageBlock">
       <div accordionBodyContent>
@@ -43,6 +45,8 @@
     <ng-container *ngIf="basicUsageBlock.showsBody || roundedUsage.showsBody">
       <div class="accordion-spacing"></div>
     </ng-container>
+
+    <!--Rounded Usage-->
     <app-accordion
       [accordionBlock]="roundedUsage">
       <div accordionBlockContent>
@@ -51,6 +55,28 @@
         <div class="code-wrapper">
           <pre><code [highlight]="roundedUsage.code"></code></pre>
         </div>
+
+        <div class="accordion-divider mt-2 mb-1"></div>
+
+        <h3>Result</h3>
+        <div class="flex-row nowrap align-start justify-start mb-1">
+          <div class="ml-1 mr-3 flex-column nowrap align-start justify-start">
+              <div class="mb-1">
+                <code>.primary</code> class
+              </div>
+              <button class="btn primary rounded ml-2 mr-1">
+                Submit
+              </button>
+            </div>
+            <div class="ml-1 mr-3 flex-column nowrap align-start justify-start">
+              <div class="mb-1">
+                <code>.secondary</code> class
+              </div>
+              <button class="btn secondary rounded ml-2 mr-1">
+                Submit
+              </button>
+            </div>
+          </div>
       </div>
     </app-accordion>
   </div>
